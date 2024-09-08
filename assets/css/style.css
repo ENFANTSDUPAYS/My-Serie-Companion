@@ -1,0 +1,241 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+header, footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #1e2a47;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    background-color: black;
+}
+.categ{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.Catégorie, .profil{
+    display: flex;
+    text-wrap: nowrap;  
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+.Catégorie:hover{
+        text-decoration: underline;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.Connexion{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.connect_contain{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.png_demerde{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+.Global_container{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+}
+.ligne{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+
+}
+.title_categ{
+    margin-left: 5%;
+    color: black;
+    font-size: 25px;
+}
+/*TABLEAU*/
+
+.table-container, .Ajouter_categ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/*FORMULAIRE*/
+form .form-style {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+.file_bouton, .file_bouton2{
+    position: absolute;
+    top: 320px;
+    z-index: -1;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.file_bouton2{
+    top: 700px;
+}
+input[type="text"], input[type="number"], input[type="file"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+input[type="file"]{
+    opacity: 0;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="file"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    padding: 3px;
+}
+
+.form-group input[type="file"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+}
+Img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+}
+.Bouton_modifsupp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: solid #4caf50 1px;
+    border-radius: 15px;
+    color: black;
+    transition: 0.3s linear;
+}
+.Bouton_modifsupp:hover{
+    background: #4caf50;
+    transition: 0.5s linear;
+    color: white;
+}
